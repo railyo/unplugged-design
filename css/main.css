@@ -359,9 +359,154 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
 }
+.content-wrapper {
+  width: 640px; 
+  margin: 100px;
+}
+header {
+  padding: 33px 0;
+}
+
+header .content-wrapper {
+  justify-content: center;
+  width: 100%;
+}
+header nav {
+  width: 20%;
+}
+header nav ul {
+  justify-content: space-between;
+}
+.hero-area .content-wrapper {
+  margin: 100px 0;
+}
+.header-divider {
+  display: none;
+}
+
+/*hero area */
+
+/*aside area */
+aside .content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+  width: 40%;
+  margin: 0;
+}
+
+/* features */
+.features .content-wrapper {
+  margin: 100px 0;
+}
+.features article {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  flex-basis: 50%;
+}
+.features .features-item-description {
+  width: 50%;
+}
+
+.features h2 {
+  margin-bottom: 20px;
+}
+/*reviews*/
+.reviews article {
+  display: flex;
+  justify-content: space-between;
+}
+.reviews article div {
+  width: 50%;
+}
+/*footer*/
+footer .content-wrapper {
+  width: 65%;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .contact {
+  margin-bottom: 0;
+}
+footer .copyright {
+  width: 100%;
+}
+
+/* about page */
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+.mission-content p {
+  width: 45%;
+}
+.contact-section .content-wrapper h2 {
+  width: 75%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* FAQ Page */
+
+.faq .content-wrapper {
+  justify-content: space-between;
+ }
+    
+ .faq-content {
+        flex-basis: 45%;
+}
+.faq h2 {
+        width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  /*desktop styles here*/
+}
+header .content-wrapper {
+  justify-content: center;
+}
+header nav ul {
+  justify-content: center;
+}
+aside .content-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.features article {
+  display: flex;
+  align-items: stretch;
+  flex-flow: row wrap;
+  flex-basis: auto;
+}
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+.faq-content {
+  flex-basis: auto;
+}
+
+/* about page */
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),

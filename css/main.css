@@ -15,6 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  display: flex;
 }
 
 /*
@@ -86,62 +87,89 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.content-wrapper {
-  width: 90%;
-  margin: 50px 0;
-}
+
 
 /*--Base Header - Footer Styles -------*/
 
+/*-- header and navbar section here --*/
 header {
-  display: flex;
-  justify-content: center;
+  background-color: rgb(40, 40, 40);
+  display: inline-block;
+  justify-content: space-between;
+  width: 100%;
   padding: 15px 0;
-  background-color: rgb(46, 46, 46);
-
 }
-header .content-wrapper {
+.navbar-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-flow: row wrap;
-  margin: 0;
-  
+  margin: auto;
+  width: 50%;
 }
-
-.header-divider {
-  width: 100%;
-  height: 1px;
-  margin: 10px 0 20px 0;
-}
-
-header nav {
-  width: 60%;
-  
-}
-
-header nav ul {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  
-} 
-.navbar {
-  display: flex;
-  width: 100%;
-  align-items: center;
-}
-
-
 .main-navigation {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
+  padding-left: 50%;
 }
 .unplugged-logo {
   width: 150px;
   height: auto;
+  margin-right: 20px;
 }
+/*-- aside section starts here --*/
+aside {
+  background-color: rgb(69, 116, 89);
+  color: white;
+  padding: 50px 0;
+  opacity: 90%;
+  margin-right: auto;
+}
+.dark-square-button {
+  background-color: rgb(14, 36, 7);
+  color: white;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.form .form-description {
+  margin: auto;
+  justify-content: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  font-size: 1em;
+  margin: auto;
+
+}
+.form-description {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  font-size: 1em;
+  margin: auto;
+}
+.form-description p {
+  width: 80%;
+  margin: 0;
+  text-overflow: inherit;
+}
+/*-- features section starts here --*/
+.features {
+  background-image: url(/unplugged-retreat-features.jpg);
+  position: center center;
+  background-size: cover;
+  padding: 50px 0;
+  color: white;
+  opacity: 90%;
+}
+
+/*-- footer section here --*/
 footer {
   display: flex;
   flex-direction: column;
@@ -177,7 +205,6 @@ footer .social-icons p {
 footer .copyright {
   margin: 20px 0; 
 }
-
 
 /*------Mobile Styles - Homepage -----*/
 

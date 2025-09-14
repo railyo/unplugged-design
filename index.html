@@ -21,15 +21,14 @@
       <div class="navbar-wrapper">
         <div class="logo">
         <img src="unpluggedlogo.png" alt="unplugged logo" class="unplugged-logo">
-      </div>
-
-      <div class="navbar-wrapper">
-        <div class="main-navigation">
-          <a href="faq/index.html">FAQ
-          <a href="about/index.html">About</a>
         </div>
       </div>
-    </div>
+      <div class="navbar-wrapper">
+        <div class="main-navigation">
+          <a href="faq/index.html" class="faq-link">FAQ</a>
+          <a href="about/index.html" class="about-link">About</a>
+        </div>
+      </div>
   </header>
 <!--main section content starts here-->
   <main>
@@ -38,6 +37,7 @@
         <h1>Retreat from the desk, <br>return refreshed.</h1>
       </div>
     </section>
+  <!-- aside content starts here  -->
     <aside>
       <div class="content-wrapper">
         <div class="form-description">
@@ -48,9 +48,11 @@
         </div>
         <div class="form">
           <h3>Find out more</h3>
-          <input type="text" name="name" value="name@email.com">
-          <button class="dark-square-button" type="button" value="Download Itinerary">Download Itinerary</button>
-        </div>
+          <form>
+            <input type="text" name="name" value="name@email.com"><br>
+            <button class="dark-square-button" type="button" value="Download Itinerary">Download Itinerary</button>
+            </form>
+          </div>
       </div>
 <!-- aside content wrapper ends -->
     </aside>
@@ -104,22 +106,23 @@
         </div>
       </div>
     </section>
-
     <section class="reviews">
-      <div class="content-wrapper">
-        <h2>Be a better team in 5 days, like this one.</h2>
-        <article>
-          <div>
+        <div class="review-text">
+          <h2 class="review-title">Be a better team in 5 days, like this one.</h2>
+        </div>
+        <div class="review-content">
+            <div class="review-image">
+              <img src="unplugged-retreat-lacrue.jpg" alt="team photo" id="review-image">
+            </div>
+            <div class="review-p">
             <h3>LaCrue Bottling Co. October 2018</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor
               in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
           </div>
-        </article>
-      </div>
+          </div>
     </section>
 
   </main>
@@ -152,13 +155,13 @@
           </div>
         </div>
       </div>
-<!-- footer content ends -->
     </div>
-<!--footer content-wrapper ends-->
     <div class="copyright">
       <p>Copyright 202X | Unplugged</p>
     </div>
   </footer>
+
+
   <script src="/../js/vendor/modernizr-3.11.2.min.js"></script>
   <script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="/../js/plugins.js"></script>

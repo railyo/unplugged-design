@@ -330,12 +330,17 @@ aside .content-wrapper {
   height: 600px;
   background: url('../img/map.png') no-repeat center center/cover;
   position: relative;
+  margin: 0; 
 }
-.map-bg .map-link {
-  position: absolute;
-  inset: 0;   /* makes the <a> cover the whole section */
-  display: block;
+
+.contact-section {
+  background-color: rgb(6, 69, 6);
+  width: 100%;
+  margin: 0; 
+  padding: 50px 0; 
+  position: relative;
 }
+
 
 
 /*--FAQ page--*/

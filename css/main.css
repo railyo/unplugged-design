@@ -165,7 +165,7 @@ header {
 /*-- aside section starts here --*/
 aside {
   display: flex;
-  background-color: rgb(54, 80, 65);
+  background-color: rgb(59, 115, 82);
   color: white;
   opacity: 90%;
   margin-right: auto;
@@ -302,29 +302,31 @@ aside .content-wrapper {
   align-items: center;
   background-color: rgb(54, 80, 65);
   width: 100%;
-  height: auto;
 
 }
 .mission-content h1 {
-  justify-content: center;
-  text-align: center;
   width: 100%;
+  padding: 0 100px;
 
 }
 .mission-content p {
-  width: 50%;
+  width: 100%;
 }
+
 .contact-section {
   background-color: rgb(6, 69, 6);
   height: auto;
   width: 100%;
   position: relative;
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-content  {
-  width: 50%;  
+  display: flex;
 }
+
 .map-bg {
   width: 100%;
   height: 600px;
@@ -332,15 +334,6 @@ aside .content-wrapper {
   position: relative;
   margin: 0; 
 }
-
-.contact-section {
-  background-color: rgb(6, 69, 6);
-  width: 100%;
-  margin: 0; 
-  padding: 50px 0; 
-  position: relative;
-}
-
 
 
 /*--FAQ page--*/
@@ -470,17 +463,14 @@ header .content-wrapper {
 header nav {
   width: 20%;
 }
-header nav ul {
+header {
   justify-content: space-between;
 }
+/*hero area */
+
 .hero-area .content-wrapper {
   margin: 100px 0;
 }
-.header-divider {
-  display: none;
-}
-
-/*hero area */
 
 /*aside area */
 aside .content-wrapper {
@@ -499,7 +489,7 @@ aside .content-wrapper .form {
 .features .content-wrapper {
   margin: 100px 0;
 }
-.features {
+.features article {
   display: flex;
   align-items: center;
   flex-flow: column wrap;
@@ -560,6 +550,7 @@ footer .copyright {
 
 .faq .content-wrapper {
   justify-content: space-between;
+  width: 65%;
 } 
 .faq-content {
   flex-basis: 45%;
@@ -579,7 +570,7 @@ header .content-wrapper {
   justify-content: space-between;
   width: 30%;
 }
-header nav ul {
+header {
   justify-content: space-between;
 }
 
@@ -606,9 +597,17 @@ aside .content-wrapper {
 }
 .faq-content {
   flex-basis: auto;
+  height: auto;
 }
 
 /* about page */
+
+.mission {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  margin-right: 20px;
+}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),

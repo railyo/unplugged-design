@@ -15,7 +15,6 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  display: flex;
 }
 
 /*
@@ -89,25 +88,32 @@ textarea {
    ========================================================================== */
 
 
-/*--Base Styles -------*/
+/*--Base Font Styles -------*/
 html {
   font-size: 1rem;
 }
 body {
-  width: 100%;
-  margin: 0;
   font-family:'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
-  background-color: rgb(40, 40, 40);
-  color: white;
-  align-items: center;
-  justify-content: center;
+  background-color: #202322;
+  color: #e2e3ed;
 }
 
+h1 {
+  font-size: 2.25em;
+  line-height: 43px;
+  font-weight: 500;
+
+}
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
+}
+.reviews,
+h2 {
+  line-height: 30px;
 }
 
 h3,
@@ -115,10 +121,16 @@ h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   margin: 20px 0;
+  font-weight: 500;
+}
+.faq-content,
+h4 {
+  line-height: 24px;
 }
 p {
   font-size: .875em;
   line-height: 1.285;
+  line-height: 18px;
 }
 address {
   font-style: normal;
@@ -139,6 +151,8 @@ header {
   align-items: baseline;
   margin: auto;
   width: 100%;
+  font-weight: bold;
+  font-size: 1.125em;
 }
 .logo {
   width: 50%;
@@ -152,7 +166,7 @@ header {
   padding-left: 50%;
 }
   .faq-link, .about-link {
-    color: white;
+    color: #e2e3ed;
     text-decoration: none;
     padding: 0 20px;
   }
@@ -169,7 +183,6 @@ header {
 .hero-area {
   height: 600px;
   height: auto;
-  color: white;
   display: flex;
   justify-content: center;
   background-image: url(/unplugged-retreat.jpg);
@@ -177,7 +190,7 @@ header {
   background-position: center center;
   background-size: cover;
   height: 600px;
-  color: white;
+  color: #e2e3ed;
 }
 .content-wrapper, h1 {
   margin-right: 25%;
@@ -189,8 +202,8 @@ header {
 /*-- aside section starts here --*/
 aside {
   display: flex;
-  background-color: rgb(59, 115, 82);
-  color: white;
+  background-color: #527158;
+  color: #e2e3ed;
   opacity: 90%;
   margin-right: auto;
   justify-content: center;
@@ -205,8 +218,8 @@ aside .content-wrapper {
 
 
 .dark-square-button {
-  background-color: rgb(14, 36, 7);
-  color: white;
+  background-color: #2a423a;
+  color: #e2e3ed;
   border: none;
   font-size: 1em;
   cursor: pointer;
@@ -236,7 +249,7 @@ aside .content-wrapper {
   position: center center;
   background-size: cover;
   padding: 50px 0;
-  color: white;
+  color: #e2e3ed;
   opacity: 90%;
   display: flex;
   justify-content: center;
@@ -277,9 +290,9 @@ a {
   flex-direction: column;
   padding: 50px 0;
   margin: 0;
-  background-color: rgb(54, 80, 65);
+  background-color: #2a423a;
   width: 100%;
-  color: white;
+  color: #e2e3ed;
 }
 .review-title {
   padding-bottom: 50px;
@@ -325,23 +338,21 @@ a {
 
 .mission {
   display: flex;
+  flex-direction: column wrap;
   justify-content: center;
   align-items: center;
-  background-color: rgb(54, 80, 65);
-  width: 100%;
+  background-color: #527158;
 
 }
 .mission-content h1 {
   width: 100%;
-  padding: 0 100px;
-
 }
 .mission-content p {
   width: 100%;
 }
 
 .contact-section {
-  background-color: rgb(6, 69, 6);
+  background-color: #2a423a;
   height: auto;
   width: 100%;
   position: relative;
@@ -367,7 +378,7 @@ a {
 .faq {
   display: flex;
   justify-content: center;
-  background-color:rgb(54, 80, 65);
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -465,6 +476,31 @@ a {
 .clearfix::after {
   clear: both;
 }
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -475,6 +511,22 @@ a {
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
 }
+/*-- text styling here -*/
+h1 {
+  font-size: 3em;
+  line-height: 48px;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 48px;
+  }
+
+h3 {
+  font-size: 1.5em;
+  line-height: 30px;
+  }
+
 .content-wrapper {
   width: 640px; 
   margin: 100px;
@@ -538,6 +590,13 @@ aside .content-wrapper .form {
   width: 50%;
 }
 /*footer*/
+footer, h4 {
+  font-size: 1.5em;
+}
+
+footer, p {
+  line-height: 18px;
+}
 footer .content-wrapper {
   width: 65%;
 }
@@ -585,9 +644,21 @@ footer .copyright {
 .faq h2 {
   width: 100%;
 }
+.faq, h4 {
+  font-size: .875em;
+  line-height: 15.75px;
+}
 
 @media only screen and (min-width: 1200px) {
   /*desktop styles here*/
+}
+
+h1 {
+  font-size: 3.75em;
+}
+
+h2 {
+  font-size: 2.25em;
 }
 .content-wrapper {
   width: 960px;
@@ -636,6 +707,16 @@ aside .content-wrapper {
   margin-right: 20px;
 }
 
+.faq, .about, .mission, h2 {
+  font-weight: 3em;
+}
+
+.faq, h4, p {
+  font-size: 1.125em;
+}
+p {
+  line-height: 24px;
+}
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),

@@ -1,47 +1,53 @@
 <!doctype html>
 <html class="no-js" lang="en">
-<!--head content starts here-->
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Unplugged Reatreat</title>
-  <meta name="description" content="Unplugged Retreat">
-  <meta name="viewport" content="width=device-width, initial-scale=1", shrink-to-fit="no">
-<!--google fonts-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="manifest" href="../site.webmanifest">
-  <link rel="apple-touch-icon" href="../icon.png">
-<!-- Place favicon.ico in the root directory -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <meta name="theme-color" content="#fafafa">
+  <title>Unplugged Retreat</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:500,700" rel="stylesheet">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
-<!--body content starts here-->
+
 <body>
-<!-- header content and nav bar starts here-->
-  <header>   
-      <div class="navbar-wrapper">
-        <div class="logo">
-        <img src="unpluggedlogo.png" alt="unplugged logo" class="unplugged-logo">
-        </div>
-      </div>
-      <div class="navbar-wrapper">
-        <div class="main-navigation">
-          <a href="faq/index.html" class="faq-link">FAQ</a>
-          <a href="about/index.html" class="about-link">About</a>
-        </div>
-      </div>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <header>
+    <div class="content-wrapper">
+      <figure>
+        <a href="#">
+          <img src="../unpluggedlogo.png" alt="unplugged logo">
+        </a>
+      </figure>
+      <div class="header-divider"></div>
+      <nav>
+        <ul>
+          <li><a href="/../faq/index.html">FAQ</a></li>
+          <li><a href="/../about/index.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-<!--main section content starts here-->
+
   <main>
+
     <section class="hero-area">
       <div class="content-wrapper">
-        <h1>Retreat from the desk, <br>return refreshed.</h1>
+        <h1>Retreat from the desk, return refreshed.</h1>
       </div>
     </section>
-  <!-- aside content starts here  -->
+
     <aside>
       <div class="content-wrapper">
         <div class="form-description">
@@ -52,13 +58,11 @@
         </div>
         <div class="form">
           <h3>Find out more</h3>
-          <form>
-            <input type="text" name="name" value="name@email.com" id="email-sub"><br>
-            <input class="dark-square-button" type="button" value="Download Itinerary">
-            </form>
-          </div>
+          <input type="text" name="name" value="name@email.com">
+          <input type="button" value="Download Itinerary">
+        </div>
       </div>
-<!-- aside content wrapper ends -->
+      <!-- aside content wrapper ends -->
     </aside>
 
     <section class="features">
@@ -110,27 +114,29 @@
         </div>
       </div>
     </section>
+
     <section class="reviews">
-        <div class="review-text">
-          <h2 class="review-title">Be a better team in 5 days, like this one.</h2>
-        </div>
-        <div class="review-content">
-            <div class="review-image">
-              <img src="unplugged-retreat-lacrue.jpg" alt="team photo" id="review-image">
-            </div>
-            <div class="review-p">
+      <div class="content-wrapper">
+        <h2>Be a better team in 5 days, like this one.</h2>
+        <article>
+          <figure>
+            <img src="../unplugged-retreat-lacrue.jpg" alt="Group of happy people at an outdoor retreat.">
+          </figure>
+          <div>
             <h3>LaCrue Bottling Co. October 2018</h3>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor
               in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
           </div>
-          </div>
+        </article>
+      </div>
     </section>
 
   </main>
-  <!-- footer and contact begins here -->
+  <!-- main wrapper -->
 
   <footer>
     <div class="content-wrapper">
@@ -159,23 +165,34 @@
           </div>
         </div>
       </div>
+      <!-- footer content ends -->
+    </div>
+    <!--footer content-wrapper ends-->
     <div class="copyright">
       <p>Copyright 202X | Unplugged</p>
     </div>
   </footer>
 
-
-  <script src="/../js/vendor/modernizr-3.11.2.min.js"></script>
-  <script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="/../js/plugins.js"></script>
-  <script src="/../js/main.js"></script>
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+  </script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>

@@ -229,12 +229,25 @@ footer .social-icons {
   align-items: center;
 }
 
-footer .social-icons p {
+footer .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+footer .social-icons p {
+  background-color:#527158;
+  font-size: 21px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social-icons p i {
+  font-size: 1.3125em;
+}
 footer .copyright {
   margin: 20px 0;
 }

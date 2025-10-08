@@ -121,14 +121,16 @@ a {
   color: #e2e3ed;
   text-decoration: none;
 }
-
+h1 {
+  color: #616E98;
+}
 h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.875em;
 }
 
-h3,
+h2,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;

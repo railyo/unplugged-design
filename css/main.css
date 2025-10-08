@@ -213,7 +213,7 @@ footer {
   background-color: #202322;
 }
 
-footer h5 {
+footer i {
   margin: 0;
 }
 
@@ -237,7 +237,7 @@ footer .social-icons {
   align-items: center;
 }
 
-footer .social-icons h5 {
+footer .social-icons a {
   background-color:#527158;
   font-size: 21px;
   border-radius: 50%;
@@ -247,7 +247,7 @@ footer .social-icons h5 {
   justify-content: center;
   align-items: center;
 }
-footer .social-icons h5 i {
+footer .social-icons a {
   font-size: 1.3125em;
 }
 footer .copyright {
@@ -307,10 +307,10 @@ input[type=button] {
   text-align: center;
   text-transform: uppercase;
 }
-h2 aside {
+h2 {
   background-color: #455F49;
 }
-h3 aside {
+h3 {
   background-color: #384D39;
 }
 /* Features */
